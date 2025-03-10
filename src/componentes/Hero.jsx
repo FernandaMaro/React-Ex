@@ -4,7 +4,7 @@ import ChefMaro from "./ChefMaro";
 import { getRecipeFromChefClaude, getRecipeFromMistral, getRecipeFromGemini } from "/ai";
 
 export default function Main() {
-  const [ingredients, setIngredients] = React.useState(["oregano", "chicken", "pasta", "milk"]);
+  const [ingredients, setIngredients] = React.useState([]);
   const [recipe, setRecipe] = React.useState("");
 
   async function getRecipe() {
