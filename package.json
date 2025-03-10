@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",
+    "@google/generative-ai": "^0.24.0",
     "@huggingface/inference": "^3.5.1",
+    "openai": "^4.86.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-markdown": "^10.0.1"

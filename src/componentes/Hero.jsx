@@ -1,14 +1,14 @@
 import React from "react";
 import IngredientsList from "./IngredientsList";
 import ChefMaro from "./ChefMaro";
-import { getRecipeFromChefClaude, getRecipeFromMistral } from "/ai";
+import { getRecipeFromChefClaude, getRecipeFromMistral, getRecipeFromGemini } from "/ai";
 
 export default function Main() {
-  const [ingredients, setIngredients] = React.useState([]);
+  const [ingredients, setIngredients] = React.useState(["oregano", "chicken", "pasta", "milk"]);
   const [recipe, setRecipe] = React.useState("");
 
   async function getRecipe() {
-    const recipeMarkdown = await getRecipeFromMistral(ingredients);
+    const recipeMarkdown = await getRecipeFromGemini(ingredients);
     setRecipe(recipeMarkdown);
   }
 
